@@ -12,6 +12,8 @@ import Settings from './screens/Settings'
 import { colors, sizes } from './lib/styles'
 import { Provider } from 'react-redux'
 import store from './redux/store'
+import { fetchGenres } from './redux/thunks/genres.thunk'
+import { fetchMediaConfig } from './redux/thunks/media.thunk'
 import { SCREENS } from './lib/constants'
 
 const Tab = createBottomTabNavigator()
@@ -92,6 +94,9 @@ function Main() {
     </Tab.Navigator>
   )
 }
+
+store.dispatch(fetchGenres())
+store.dispatch(fetchMediaConfig())
 
 function App() {
   return (
