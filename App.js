@@ -10,6 +10,9 @@ import Discover from './screens/Discover'
 import Settings from './screens/Settings'
 
 import { colors, sizes } from './lib/styles'
+import { Provider } from 'react-redux'
+import store from './redux/store'
+import { SCREENS } from './lib/constants'
 
 const Tab = createBottomTabNavigator()
 const Stack = createNativeStackNavigator()
@@ -63,15 +66,29 @@ const stackOptions = ({ route, navigation }) => ({
   }
 })
 
+const renderSettingsBtn = (navigation) => {
+  return (
+    <TouchableOpacity
+      onPress={() => navigation.navigate(SCREENS.SETTINGS)}
+      style={styles.button}
+    >
+      <Icon name="filter" size={sizes.xxl} />
+    </TouchableOpacity>
+  )
+}
+
 function Main() {
   return (
     <Tab.Navigator screenOptions={tabOptions}>
       <Tab.Screen
-        name="Discover"
+        name={SCREENS.DISCOVER}
         component={Discover}
-        options={{ headerTitle: 'Discover' }}
+        options={({ navigation }) => ({
+          headerTitle: SCREENS.DISCOVER,
+          headerRight: () => renderSettingsBtn(navigation)
+        })}
       />
-      <Tab.Screen name="Favorites" component={Favorites} />
+      <Tab.Screen name={SCREENS.FAVOURITES} component={Favorites} />
     </Tab.Navigator>
   )
 }
@@ -79,16 +96,18 @@ function Main() {
 function App() {
   return (
     <SafeAreaProvider>
-      <NavigationContainer>
-        <Stack.Navigator screenOptions={stackOptions}>
-          <Stack.Screen
-            name="Main"
-            component={Main}
-            options={{ headerShown: false }}
-          />
-          <Stack.Screen name="Settings" component={Settings} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <Provider store={store}>
+        <NavigationContainer>
+          <Stack.Navigator screenOptions={stackOptions}>
+            <Stack.Screen
+              name={SCREENS.MAIN}
+              component={Main}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen name={SCREENS.SETTINGS} component={Settings} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </Provider>
     </SafeAreaProvider>
   )
 }
