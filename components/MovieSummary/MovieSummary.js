@@ -21,7 +21,7 @@ export const MovieSummary = ({ data: { title, genres, rating, year } }) => {
         showRating={false}
         size={sizes.lg}
         isDisabled={true}
-        count={rating}
+        count={5}
         defaultRating={rating}
         ratingContainerStyle={styles.ratingContainer}
         selectedColor={colors.primary}

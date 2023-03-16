@@ -24,28 +24,28 @@ const tabOptions = ({ route }) => ({
   tabBarInactiveTintColor: colors.neutral,
   tabBarIcon: ({ focused, color }) => {
     let iconName
-    if (route.name === 'Home') {
+    if (route.name === SCREENS.HOME) {
       if (focused) {
         iconName = 'home'
       } else {
         iconName = 'home-outline'
       }
     }
-    if (route.name === 'Discover') {
+    if (route.name === SCREENS.DISCOVER) {
       if (focused) {
         iconName = 'compass'
       } else {
         iconName = 'compass-outline'
       }
     }
-    if (route.name === 'Favorites') {
+    if (route.name === SCREENS.FAVOURITES) {
       if (focused) {
         iconName = 'heart'
       } else {
         iconName = 'heart-outline'
       }
     }
-    return <Icon name={iconName} size={20} color={color} />
+    return <Icon name={iconName} size={27} color={color} />
   }
 })
 

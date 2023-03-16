@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Movie } from '../components'
 
 import EmptyState from '../components/EmptyState'
+import { SCREENS } from '../lib/constants'
 import { containerStyles } from '../lib/styles'
 import {
   selectMediaBaseUrl,
@@ -35,10 +36,10 @@ export default function Discover({ navigation }) {
 
   return (
     <View style={containerStyles}>
-      {(movies && (
+      {(movies?.length > 0 && (
         <FlatList
           data={movies}
-          keyExtractor={(item) => item.title+new Date().getDate()}
+          keyExtractor={(item, index) => `${item.id + index}`}
           ListFooterComponent={ListFooter}
           onEndReached={() => {
             if (!onEndReachedCalledDuringMomentum.current) {
@@ -53,12 +54,12 @@ export default function Discover({ navigation }) {
           renderItem={({ item }) => {
             return (
               <Movie
-              key={item.id}
                 id={item.id}
                 genres={item.genre_ids}
                 title={item.title}
                 year={new Date(item.release_date).getFullYear()}
                 imageUri={`${mediaUrl}${mediaSizes?.[0]}${item.poster_path}`}
+                posterPath={item.poster_path}
                 rating={item.vote_average}
               />
             )
@@ -70,7 +71,7 @@ export default function Discover({ navigation }) {
           title="No results found"
           message="Try adjusting the settings"
           actionLabel="Go to Settings"
-          onAction={() => navigation.navigate('Settings')}
+          onAction={() => navigation.navigate(SCREENS.SETTINGS)}
         />
       )}
     </View>

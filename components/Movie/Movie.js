@@ -10,13 +10,23 @@ import {
 } from '../../redux/reducers/favourite.reducer'
 import { checkFavourite } from '../../redux/selectors/favaourite.selector'
 
-export const Movie = ({ id, title, imageUri, genres, year, rating }) => {
+export const Movie = ({
+  id,
+  title,
+  imageUri,
+  genres,
+  year,
+  rating,
+  posterPath
+}) => {
   const dispatch = useDispatch()
 
   const isFavourite = useSelector(checkFavourite(id))
 
   const toggleFavourite = () => {
-    isFavourite ? dispatch(removeFavourite(id)) : dispatch(addToFavourites(id))
+    isFavourite
+      ? dispatch(removeFavourite(id))
+      : dispatch(addToFavourites({ id, title, posterPath }))
   }
 
   return (

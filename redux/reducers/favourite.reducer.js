@@ -14,7 +14,7 @@ const favouriteSlice = createSlice({
   initialState,
   reducers: {
     addToFavourites(state, action) {
-      state.data[action.payload] = action.payload
+      state.data[action.payload.id] = action.payload
     },
 
     removeFavourite(state, action) {
