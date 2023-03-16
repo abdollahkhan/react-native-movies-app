@@ -5,6 +5,7 @@ import movieReducer from './reducers/movie.reducer'
 import { persistReducer } from 'redux-persist'
 import favouriteReducer from './reducers/favourite.reducer'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import filtersReducer from './reducers/filters.reducer'
 
 const persistConfig = {
   key: 'root',
@@ -18,7 +19,8 @@ const store = configureStore({
     movies: movieReducer,
     genres: genreReducer,
     media: mediaReducer,
-    favourites: persistedReducer
+    favourites: persistedReducer,
+    filters: filtersReducer
   }
 })
 

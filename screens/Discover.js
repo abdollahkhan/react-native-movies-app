@@ -23,14 +23,14 @@ export default function Discover({ navigation }) {
 
   useEffect(() => {
     dispatch(fetchMovies())
-  }, [])
+  }, [dispatch])
 
   const ListFooter = () => {
     return <ActivityIndicator />
   }
 
   const loadMoreMovies = () => {
-    dispatch(fetchMovies())
+    dispatch(fetchMovies('paginate'))
   }
 
   return (
@@ -38,7 +38,7 @@ export default function Discover({ navigation }) {
       {(movies && (
         <FlatList
           data={movies}
-          keyExtractor={(item) => item.id}
+          keyExtractor={(item) => item.title+new Date().getDate()}
           ListFooterComponent={ListFooter}
           onEndReached={() => {
             if (!onEndReachedCalledDuringMomentum.current) {
@@ -53,6 +53,7 @@ export default function Discover({ navigation }) {
           renderItem={({ item }) => {
             return (
               <Movie
+              key={item.id}
                 id={item.id}
                 genres={item.genre_ids}
                 title={item.title}
