@@ -33,7 +33,7 @@ export default function Favorites({ navigation }) {
 
   return (
     <ScrollView
-    style={{backgroundColor: colors.white}}
+      style={{ backgroundColor: colors.white }}
       contentContainerStyle={[isEmpty && styles.empty, styles.container]}
     >
       {(isEmpty && (
@@ -51,6 +51,7 @@ export default function Favorites({ navigation }) {
               <TouchableOpacity
                 style={styles.favIconContainer}
                 onPress={() => removeFav(fav.id)}
+                accessibilityLabel="Remove Favorite Button"
               >
                 <Icon
                   name={'heart'}
