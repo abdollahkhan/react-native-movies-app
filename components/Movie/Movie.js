@@ -35,6 +35,7 @@ export const Movie = ({
         <TouchableOpacity
           style={styles.favIconContainer}
           onPress={toggleFavourite}
+          accessibilityLabel="Toggle Favorite Button"
         >
           <Icon
             name={isFavourite ? 'heart' : 'heart-outline'}

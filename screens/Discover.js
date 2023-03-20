@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react'
 import { ActivityIndicator, FlatList, View } from 'react-native'
 import { useDispatch, useSelector } from 'react-redux'
 import { Movie } from '../components'
-
 import EmptyState from '../components/EmptyState'
 import { SCREENS } from '../lib/constants'
 import { containerStyles } from '../lib/styles'
@@ -51,6 +50,7 @@ export default function Discover({ navigation }) {
           onMomentumScrollBegin={() =>
             (onEndReachedCalledDuringMomentum.current = false)
           }
+          accessibilityLabel="List of Movies"
           renderItem={({ item }) => {
             return (
               <Movie

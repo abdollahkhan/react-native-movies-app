@@ -1,0 +1,1436 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Discover Screen renders correctly when movies are fetched 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#ffffff",
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    ListFooterComponent={[Function]}
+    accessibilityLabel="List of Movies"
+    data={
+      [
+        {
+          "genre_ids": [
+            1,
+            2,
+            3,
+          ],
+          "id": 1,
+          "imageUri": "/posterPath1.jpg",
+          "posterPath": "/posterPath1.jpg",
+          "rating": 5,
+          "title": "Mock Movie",
+          "year": 2023,
+        },
+        {
+          "id": 2,
+          "imageUri": "/posterPath1.jpg",
+          "posterPath": "/posterPath2.jpg",
+          "rating": 3,
+          "title": "Mock Movie",
+          "year": 2024,
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onEndReached={[Function]}
+    onEndReachedThreshold={0.1}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "padding": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "position": "relative",
+                "width": "30%",
+              }
+            }
+          >
+            <View
+              accessibilityLabel="Toggle Favorite Button"
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "backgroundColor": "#ffffff",
+                  "borderRadius": 25,
+                  "opacity": 1,
+                  "padding": 12,
+                  "position": "absolute",
+                  "right": 5,
+                  "top": 5,
+                  "zIndex": 2,
+                }
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#0d9488",
+                      "fontSize": 18,
+                    },
+                    {
+                      "bottom": 0,
+                      "left": 3,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 2,
+                    },
+                    {
+                      "fontFamily": "Ionicons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <View
+              accessibilityIgnoresInvertColors={true}
+              style={
+                {
+                  "aspectRatio": 0.7142857142857143,
+                  "backgroundColor": "transparent",
+                  "borderRadius": 12,
+                  "overflow": "hidden",
+                  "position": "relative",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                onLoad={[Function]}
+                source={
+                  {
+                    "uri": "undefinedundefinedundefined",
+                  }
+                }
+                style={
+                  {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+                testID="RNE__Image"
+                theme={
+                  {
+                    "colors": {
+                      "background": "#ffffff",
+                      "black": "#242424",
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": {
+                        "android": {
+                          "error": "#f44336",
+                          "grey": "rgba(0, 0, 0, 0.54)",
+                          "primary": "#2196f3",
+                          "searchBg": "#dcdce1",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "default": {
+                          "error": "#ff3b30",
+                          "grey": "#7d7d7d",
+                          "primary": "#007aff",
+                          "searchBg": "#dcdce1",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                        "ios": {
+                          "error": "#ff3b30",
+                          "grey": "#7d7d7d",
+                          "primary": "#007aff",
+                          "searchBg": "#dcdce1",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                        "web": {
+                          "error": "#ff190c",
+                          "grey": "#393e42",
+                          "primary": "#2089dc",
+                          "searchBg": "#303337",
+                          "secondary": "#ca71eb",
+                          "success": "#52c41a",
+                          "warning": "#faad14",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#ad1457",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                      "white": "#ffffff",
+                    },
+                    "spacing": {
+                      "lg": 12,
+                      "md": 8,
+                      "sm": 4,
+                      "xl": 24,
+                      "xs": 2,
+                    },
+                  }
+                }
+                transitionDuration={360}
+              />
+              <View
+                accessibilityElementsHidden={true}
+                collapsable={false}
+                importantForAccessibility="no-hide-descendants"
+                pointerEvents="none"
+                style={
+                  {
+                    "bottom": 0,
+                    "left": 0,
+                    "opacity": 1,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "#bdbdbd",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__Image__placeholder"
+                >
+                  <View
+                    accessibilityLabel="loading..."
+                    accessibilityRole="none"
+                    accessible={false}
+                    onLayout={[Function]}
+                    style={
+                      [
+                        {
+                          "borderRadius": 2,
+                          "overflow": "hidden",
+                        },
+                        {
+                          "backgroundColor": "#bdc6cf",
+                          "height": 12,
+                          "width": "100%",
+                        },
+                        undefined,
+                        {
+                          "height": "100%",
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                    testID="RNE__Skeleton"
+                  >
+                    <View
+                      collapsable={false}
+                      style={
+                        {
+                          "backgroundColor": "rgb(166, 178, 190)",
+                          "height": "100%",
+                          "transform": [
+                            {
+                              "translateX": -0,
+                            },
+                          ],
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+              <View
+                style={{}}
+                testID="RNE__Image__children__container"
+              />
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "width": "70%",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "padding": 10,
+                }
+              }
+            >
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "color": "#000000",
+                    "fontSize": 18,
+                    "fontWeight": "700",
+                    "marginBottom": 16,
+                  }
+                }
+              >
+                Mock Movie
+              </Text>
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "flexDirection": "column",
+                      "justifyContent": "center",
+                    },
+                    {
+                      "alignItems": "flex-start",
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": true,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Image
+                      collapsable={false}
+                      source={
+                        {
+                          "testUri": "../../react-native-ratings/dist/images/airbnb-star.png",
+                        }
+                      }
+                      style={
+                        {
+                          "height": 16,
+                          "margin": 3,
+                          "tintColor": "#0d9488",
+                          "transform": [
+                            {
+                              "scale": 1,
+                            },
+                          ],
+                          "width": 16,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": true,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Image
+                      collapsable={false}
+                      source={
+                        {
+                          "testUri": "../../react-native-ratings/dist/images/airbnb-star.png",
+                        }
+                      }
+                      style={
+                        {
+                          "height": 16,
+                          "margin": 3,
+                          "tintColor": "#0d9488",
+                          "transform": [
+                            {
+                              "scale": 1,
+                            },
+                          ],
+                          "width": 16,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": true,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Image
+                      collapsable={false}
+                      source={
+                        {
+                          "testUri": "../../react-native-ratings/dist/images/airbnb-star.png",
+                        }
+                      }
+                      style={
+                        {
+                          "height": 16,
+                          "margin": 3,
+                          "tintColor": "#0d9488",
+                          "transform": [
+                            {
+                              "scale": 1,
+                            },
+                          ],
+                          "width": 16,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": true,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Image
+                      collapsable={false}
+                      source={
+                        {
+                          "testUri": "../../react-native-ratings/dist/images/airbnb-star.png",
+                        }
+                      }
+                      style={
+                        {
+                          "height": 16,
+                          "margin": 3,
+                          "tintColor": "#BDC3C7",
+                          "transform": [
+                            {
+                              "scale": 1,
+                            },
+                          ],
+                          "width": 16,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": true,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Image
+                      collapsable={false}
+                      source={
+                        {
+                          "testUri": "../../react-native-ratings/dist/images/airbnb-star.png",
+                        }
+                      }
+                      style={
+                        {
+                          "height": 16,
+                          "margin": 3,
+                          "tintColor": "#BDC3C7",
+                          "transform": [
+                            {
+                              "scale": 1,
+                            },
+                          ],
+                          "width": 16,
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "color": "#757575",
+                    "fontSize": 14,
+                    "marginBottom": 5,
+                  }
+                }
+              >
+                , , 
+              </Text>
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "color": "#757575",
+                    "fontSize": 14,
+                    "marginBottom": 5,
+                  }
+                }
+              >
+                NaN
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "padding": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "position": "relative",
+                "width": "30%",
+              }
+            }
+          >
+            <View
+              accessibilityLabel="Toggle Favorite Button"
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "backgroundColor": "#ffffff",
+                  "borderRadius": 25,
+                  "opacity": 1,
+                  "padding": 12,
+                  "position": "absolute",
+                  "right": 5,
+                  "top": 5,
+                  "zIndex": 2,
+                }
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#0d9488",
+                      "fontSize": 18,
+                    },
+                    {
+                      "bottom": 0,
+                      "left": 3,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 2,
+                    },
+                    {
+                      "fontFamily": "Ionicons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <View
+              accessibilityIgnoresInvertColors={true}
+              style={
+                {
+                  "aspectRatio": 0.7142857142857143,
+                  "backgroundColor": "transparent",
+                  "borderRadius": 12,
+                  "overflow": "hidden",
+                  "position": "relative",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                onLoad={[Function]}
+                source={
+                  {
+                    "uri": "undefinedundefinedundefined",
+                  }
+                }
+                style={
+                  {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+                testID="RNE__Image"
+                theme={
+                  {
+                    "colors": {
+                      "background": "#ffffff",
+                      "black": "#242424",
+                      "disabled": "hsl(208, 8%, 90%)",
+                      "divider": "#bcbbc1",
+                      "error": "#ff190c",
+                      "grey0": "#393e42",
+                      "grey1": "#43484d",
+                      "grey2": "#5e6977",
+                      "grey3": "#86939e",
+                      "grey4": "#bdc6cf",
+                      "grey5": "#e1e8ee",
+                      "greyOutline": "#bbb",
+                      "platform": {
+                        "android": {
+                          "error": "#f44336",
+                          "grey": "rgba(0, 0, 0, 0.54)",
+                          "primary": "#2196f3",
+                          "searchBg": "#dcdce1",
+                          "secondary": "#9C27B0",
+                          "success": "#4caf50",
+                          "warning": "#ffeb3b",
+                        },
+                        "default": {
+                          "error": "#ff3b30",
+                          "grey": "#7d7d7d",
+                          "primary": "#007aff",
+                          "searchBg": "#dcdce1",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                        "ios": {
+                          "error": "#ff3b30",
+                          "grey": "#7d7d7d",
+                          "primary": "#007aff",
+                          "searchBg": "#dcdce1",
+                          "secondary": "#5856d6",
+                          "success": "#4cd964",
+                          "warning": "#ffcc00",
+                        },
+                        "web": {
+                          "error": "#ff190c",
+                          "grey": "#393e42",
+                          "primary": "#2089dc",
+                          "searchBg": "#303337",
+                          "secondary": "#ca71eb",
+                          "success": "#52c41a",
+                          "warning": "#faad14",
+                        },
+                      },
+                      "primary": "#2089dc",
+                      "searchBg": "#303337",
+                      "secondary": "#ad1457",
+                      "success": "#52c41a",
+                      "warning": "#faad14",
+                      "white": "#ffffff",
+                    },
+                    "spacing": {
+                      "lg": 12,
+                      "md": 8,
+                      "sm": 4,
+                      "xl": 24,
+                      "xs": 2,
+                    },
+                  }
+                }
+                transitionDuration={360}
+              />
+              <View
+                accessibilityElementsHidden={true}
+                collapsable={false}
+                importantForAccessibility="no-hide-descendants"
+                pointerEvents="none"
+                style={
+                  {
+                    "bottom": 0,
+                    "left": 0,
+                    "opacity": 1,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "#bdbdbd",
+                      "justifyContent": "center",
+                    }
+                  }
+                  testID="RNE__Image__placeholder"
+                >
+                  <View
+                    accessibilityLabel="loading..."
+                    accessibilityRole="none"
+                    accessible={false}
+                    onLayout={[Function]}
+                    style={
+                      [
+                        {
+                          "borderRadius": 2,
+                          "overflow": "hidden",
+                        },
+                        {
+                          "backgroundColor": "#bdc6cf",
+                          "height": 12,
+                          "width": "100%",
+                        },
+                        undefined,
+                        {
+                          "height": "100%",
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                    testID="RNE__Skeleton"
+                  >
+                    <View
+                      collapsable={false}
+                      style={
+                        {
+                          "backgroundColor": "rgb(166, 178, 190)",
+                          "height": "100%",
+                          "transform": [
+                            {
+                              "translateX": -0,
+                            },
+                          ],
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+              <View
+                style={{}}
+                testID="RNE__Image__children__container"
+              />
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "width": "70%",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "padding": 10,
+                }
+              }
+            >
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "color": "#000000",
+                    "fontSize": 18,
+                    "fontWeight": "700",
+                    "marginBottom": 16,
+                  }
+                }
+              >
+                Mock Movie
+              </Text>
+              <View
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "flexDirection": "column",
+                      "justifyContent": "center",
+                    },
+                    {
+                      "alignItems": "flex-start",
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": true,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Image
+                      collapsable={false}
+                      source={
+                        {
+                          "testUri": "../../react-native-ratings/dist/images/airbnb-star.png",
+                        }
+                      }
+                      style={
+                        {
+                          "height": 16,
+                          "margin": 3,
+                          "tintColor": "#0d9488",
+                          "transform": [
+                            {
+                              "scale": 1,
+                            },
+                          ],
+                          "width": 16,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": true,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Image
+                      collapsable={false}
+                      source={
+                        {
+                          "testUri": "../../react-native-ratings/dist/images/airbnb-star.png",
+                        }
+                      }
+                      style={
+                        {
+                          "height": 16,
+                          "margin": 3,
+                          "tintColor": "#0d9488",
+                          "transform": [
+                            {
+                              "scale": 1,
+                            },
+                          ],
+                          "width": 16,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": true,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Image
+                      collapsable={false}
+                      source={
+                        {
+                          "testUri": "../../react-native-ratings/dist/images/airbnb-star.png",
+                        }
+                      }
+                      style={
+                        {
+                          "height": 16,
+                          "margin": 3,
+                          "tintColor": "#0d9488",
+                          "transform": [
+                            {
+                              "scale": 1,
+                            },
+                          ],
+                          "width": 16,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": true,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Image
+                      collapsable={false}
+                      source={
+                        {
+                          "testUri": "../../react-native-ratings/dist/images/airbnb-star.png",
+                        }
+                      }
+                      style={
+                        {
+                          "height": 16,
+                          "margin": 3,
+                          "tintColor": "#BDC3C7",
+                          "transform": [
+                            {
+                              "scale": 1,
+                            },
+                          ],
+                          "width": 16,
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": true,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "opacity": 1,
+                      }
+                    }
+                  >
+                    <Image
+                      collapsable={false}
+                      source={
+                        {
+                          "testUri": "../../react-native-ratings/dist/images/airbnb-star.png",
+                        }
+                      }
+                      style={
+                        {
+                          "height": 16,
+                          "margin": 3,
+                          "tintColor": "#BDC3C7",
+                          "transform": [
+                            {
+                              "scale": 1,
+                            },
+                          ],
+                          "width": 16,
+                        }
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "color": "#757575",
+                    "fontSize": 14,
+                    "marginBottom": 5,
+                  }
+                }
+              />
+              <Text
+                accessibilityRole="text"
+                style={
+                  {
+                    "color": "#757575",
+                    "fontSize": 14,
+                    "marginBottom": 5,
+                  }
+                }
+              >
+                NaN
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+      >
+        <ActivityIndicator />
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Discover Screen should render empty state when there are no movies 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#ffffff",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "gap": 10,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      source={
+        {
+          "testUri": "../../../assets/empty-discover.jpg",
+        }
+      }
+      style={
+        {
+          "height": 150,
+          "marginBottom": 10,
+          "width": 200,
+        }
+      }
+    />
+    <Text
+      style={
+        {
+          "color": "#000000",
+          "fontSize": 18,
+          "fontWeight": "700",
+          "marginBottom": 0,
+        }
+      }
+    >
+      No results found
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#757575",
+          "fontSize": 14,
+          "marginBottom": 14,
+          "marginTop": 0,
+        }
+      }
+    >
+      Try adjusting the settings
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "#000000",
+          "borderRadius": 16,
+          "opacity": 1,
+          "paddingHorizontal": 30,
+          "paddingVertical": 16,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "fontSize": 14,
+            "fontWeight": "700",
+          }
+        }
+      >
+        Go to Settings
+      </Text>
+    </View>
+  </View>
+</View>
+`;
