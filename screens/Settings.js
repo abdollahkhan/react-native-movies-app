@@ -79,6 +79,7 @@ export default function Settings({ navigation }) {
               style={styles.input}
               maxLength={4}
               value={year}
+              accessibilityLabel="Release Year"
               onChangeText={(val) => dispatch(addYearFilter(val))}
             />
           </View>
